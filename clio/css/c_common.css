@@ -1,0 +1,402 @@
+@charset "utf-8";
+body{
+    font-family:'Nanum Gothic', sans-serif;
+    font-size:16px;
+    color:#fff;
+    line-height:1.5em;
+    background-color:#000;
+}
+li{list-style:none;}
+a{color:#fff; text-decoration:none;}
+img{vertical-align:top;}
+.c_center{
+    max-width:1260px;
+    margin:0 auto;
+}
+.c_blind{
+    position:absolute;
+    left:-9999px;
+}
+.c_clear:after{
+    content:'';
+    clear:both;
+    display:block;
+}
+
+/* skip */
+.c_skip>a{
+    position:absolute;
+    top:0px;
+    left:-9999px;
+    width:100%;
+    text-align:center;
+    line-height:40px;
+    color:#000;
+    background-color:#fff;
+    background-color:rgba(255,255,255,0.95);
+    z-index:9999;
+}
+.c_skip>a:focus{
+    left:0px;
+}
+
+/* header */
+.c_hd{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    font-size:14px;
+    padding:10px 20px;
+    box-sizing:border-box;
+    background-color:#000;
+    background-color:rgba(0,0,0,0.6);
+    z-index:9899;
+}
+.c_lang{
+    float:left;
+}
+.c_util{
+    float:right;
+}
+.c_lang>li, .c_util>li{
+    float:left;
+    margin-right:10px;
+}
+.c_lang>li:last-child, .c_util>li:last-child{
+    margin-right:0;
+}
+.c_hd>ul>li>a:hover, .c_hd>ul>li>a:focus{
+    color:#dddddd;
+}
+
+/* gnb */
+#c_gnb_wrap{
+    position:absolute;
+    top:44px;
+    left:0px;
+    width:100%;
+    z-index:9799;
+}
+#c_gnb_wrap.on{
+    position:fixed;
+    top:0;
+    background-color:#fff;
+}
+#c_gnb_wrap>ul>li{
+    position:relative;
+    float:left;
+    margin:0 25px;
+    line-height:50px;
+    height:50px;
+}
+#c_gnb_wrap>ul>li.on{ 
+    line-height:50px;
+    height:50px;
+}
+#c_gnb_wrap>ul>li>a{
+    font-size:20px;
+    transition-duration:0.5s;
+    transition-property:font-size;
+    text-shadow:0px -1px 2px rgba(0, 0, 0, 0.4), -1px 0px 1px rgba(0, 0, 0, 0.4), 0px 1px 1px rgba(0, 0, 0, 0.2), 1px 0px 1px rgba(0, 0, 0, 0.4);
+}
+#c_gnb_wrap>ul>li>a.on{ 
+    font-size:18px;
+    color:#000;
+    font-weight:bold;
+    text-shadow:none;
+}
+.c_2depth_wrap{
+    display:none;
+    position:absolute;
+    top:45px;
+    padding-top:10px;
+}
+.c_2depth{
+    padding:35px;
+    text-align:center;
+    background-color:#fff;
+}
+.c_2depth_wrap:before{
+    content:'';
+    display:block;
+    height:10px;
+    background-image:url(../img/common/img_2depth.png);
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center top;
+}
+.c_2depth>li{
+    line-height:27px;
+}
+#c_gnb_wrap ul>li:nth-of-type(1) div{
+    margin-left:-20px;
+}
+#c_gnb_wrap ul>li:nth-of-type(1) ul{
+    width:100px;
+}
+#c_gnb_wrap ul>li:nth-of-type(2) div{
+    margin-left:-40px;
+}
+#c_gnb_wrap ul>li:nth-of-type(2) ul{
+    width:110px;
+}
+#c_gnb_wrap ul>li:nth-of-type(3) div{
+    margin-left:-60px;
+}
+#c_gnb_wrap ul>li:nth-of-type(3) ul{
+    width:120px;
+}
+#c_gnb_wrap ul>li:nth-of-type(4) div{
+    margin-left:-30px;
+}
+#c_gnb_wrap ul>li:nth-of-type(4) ul{
+    width:120px;
+}
+#c_gnb_wrap ul>li:nth-of-type(5) div{
+    margin-left:-55px;
+}
+#c_gnb_wrap ul>li:nth-of-type(5) ul{
+    width:115px;
+}
+#c_gnb_wrap ul>li:nth-of-type(6) div{
+    left:-80px
+}
+#c_gnb_wrap ul>li:nth-of-type(6) ul{
+    width:110px;
+}
+.c_2depth>li>a{
+    color:#2d2d2d;
+    letter-spacing:1px;
+}
+.c_2depth>li>a:hover, .c_2depth>li>a:focus{
+    color:#0000ff;
+}
+.c_logo{
+    position:absolute;
+    top:50px;
+    right:60px;
+    width:100px;
+    height:37px;
+    background-image:url(../img/common/logo_clio.png);
+    background-repeat:no-repeat;
+    background-position:center center;
+    transition-duration:0.5s;
+    transition-property:background-image;
+}
+.c_logo>a{
+    text-indent:-9999px;
+    display:block;
+}
+.c_logo.on{
+    position:fixed;
+    top:7px;
+    margin-left:10px;
+    background-image:url(../img/common/logo_clio_scroll.png);
+}
+
+
+/* quick button */
+.btn_quick{
+    display:none;
+    position:fixed;
+    bottom:10%;
+    right:50%;
+    margin-right:-48%;
+    width:62px;
+}
+.btn_quick>div{
+    position:relative;
+    border-radius:35px;
+    margin-bottom:30px;
+}
+.btn_quick>div:nth-of-type(1):after, .btn_quick>div:nth-of-type(2):after{
+    content:'';
+    position:absolute;
+    bottom:-31px;
+    left:50%;
+    background:#dbdbdb;
+    width:1px;
+    height:30px;
+}
+.btn_quick>div>a{
+    height:62px;
+    border-radius:35px;
+    display:block;
+    box-sizing:border-box;
+    color:#000;
+    padding-top:34px;
+    font-size:11px;
+    font-weight:bold;
+    text-align:center;
+    border:1px solid #dbdbdb;
+    background-color:#f7f7f7;
+    background-repeat:no-repeat;
+    background-position:center 7px;
+    transition-duration:0.5s;
+    transition-property:color, background;
+}
+.btn_quick>div:nth-of-type(1)>a{
+    background-image:url(../img/common/quick_cart.png);
+}
+.btn_quick>div:nth-of-type(2)>a{
+    background-image:url(../img/common/quick_event.png);
+}
+.btn_quick>div:nth-of-type(3)>a{
+    background-image:url(../img/common/quick_top.png);
+}
+.btn_quick>div>a:hover, .btn_quick>div>a:focus{
+    background-color:#414141;
+    color:#fff;
+}
+.btn_quick>div:nth-of-type(1)>a:hover, .btn_quick>div:nth-of-type(1)>a:focus{
+    background-image:url(../img/common/quick_cart_hover.png);
+}
+.btn_quick>div:nth-of-type(2)>a:hover, .btn_quick>div:nth-of-type(2)>a:focus{
+    background-image:url(../img/common/quick_event_hover.png);
+}
+.btn_quick>div:nth-of-type(3)>a:hover, .btn_quick>div:nth-of-type(3)>a:focus{
+    background-image:url(../img/common/quick_top_hover.png);
+}
+
+
+/* footer */
+.c_ft{
+    margin:10px;
+}
+.ft_lt_wrap{
+    float:left;
+}
+.ft_rt_wrap{
+    float:right;
+}
+.ft_lt_wrap>ul{
+    margin-top:8px;
+}
+.ft_lt_wrap>ul>li{
+    float:left;
+    padding:0 10px;
+    line-height:1em;
+    border-right:1px solid #fff;
+}
+.ft_lt_wrap>ul>li:first-child{
+    padding-left:0px;
+}
+.ft_lt_wrap>ul>li:last-child{
+    border-right:none;
+    padding-right:0px;
+}
+.ft_lt_wrap>ul>li>a{
+    font-size:14px;
+}
+.ft_lt_wrap>ul>li:nth-child(2)>a{
+    font-weight:bold;
+}
+.ft_rt_wrap>a, .ft_rt_wrap>div{
+    float:left;
+}
+.ft_rt_wrap>a{
+    float:left;
+    width:35px;
+    height:35px;
+    text-indent:-9999px;
+    box-sizing:border-box;
+    border:1px solid #fff;
+    border-radius:50%;
+    background-repeat:no-repeat;
+    background-position:center center;
+    transition:.5s;
+}
+.ft_rt_wrap>a:nth-child(1){
+    background-image:url(../img/common/icon_facebook_default.png);
+}
+.ft_rt_wrap>a:nth-child(1):hover, 
+.ft_rt_wrap>a:nth-child(1):focus{
+    background-color:#fff;
+    background-image:url(../img/common/icon_facebook_hover.png);
+}
+.ft_rt_wrap>a:nth-child(2){
+    margin:0 10px;
+    background-image:url(../img/common/icon_instagram_default.png);
+}
+.ft_rt_wrap>a:nth-child(2):hover, 
+.ft_rt_wrap>a:nth-child(2):focus{
+    background-color:#fff;
+    background-image:url(../img/common/icon_instagram_hover.png);
+}
+.ft_rt_wrap>div{
+    position:relative;
+    float:left;
+}
+.c_fam>li{
+    position:relative;
+    width:195px;
+    height:35px;
+    box-sizing: border-box;
+    border:1px solid #fff;
+    padding-right:40px;
+}
+.c_fam>li>a{
+    display:block;
+    height:100%;
+    font-size:14px;
+    text-align:center;
+    line-height:35px;
+    border-right:1px solid #fff;
+    cursor:default;
+}
+.ft_rt_wrap>div>button{
+    position:absolute;
+    top:0px;
+    right:0px;
+    width:41px;
+    height:35px;
+    padding:0px;
+    line-height:1em;
+    text-indent:-9999px;
+    border:none;
+    background-color:transparent;
+    background-image:url(../img/common/navigate_ft_up_arrow.png);
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+.ft_rt_wrap>div>button.on{
+    background-image:url(../img/common/navigate_ft_down_arrow.png);
+}
+.c_fam>li>ul{
+    display:none;
+    position:absolute;
+    bottom:35px;
+    left:0px;
+    width:100%;
+    box-sizing:border-box;
+    padding:5px;
+    border:1px solid #fff;
+    border-bottom:none;
+    text-align:center;
+    background-color:#000;
+}
+.c_fam>li>ul>li{
+    line-height:2em;
+}
+.c_fam>li>ul>li>a{
+    font-size:14px;
+    display:block;
+}
+.c_fam>li>ul>li>a:hover, .c_fam>li>ul>li>a:focus{
+    background:#fff;
+    background:rgba(255,255,255,0.9);
+    color:#000;
+    font-weight:bold;
+}
+.c_ft>p{
+    font-size:12px;
+}
+.c_ft>p>span{
+    font-style:italic;
+}
+
+
+
+
+

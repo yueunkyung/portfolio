@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>CLIO</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="description" content="안녕하세요. 클리오 웹페이지를 리뉴얼하여 검정색 배경색을 시작으로 레이아웃을 다양하게 접목시켜 보았습니다.">
+    <meta name="keywords" content="유은경, clio, publising">
+    <meta name="author" content="유은경">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/jquery.bxslider.css" rel="stylesheet">
+    <link href="css/c_common.css" rel="stylesheet">
+    <link href="css/c_main.css" rel="stylesheet">
+    <link href="css/clio_res.css" rel="stylesheet">
+    
+    <script src="js/jquery.1.12.3.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/c_common.js"></script>
+    <script src="js/c_main.js"></script> 
+    
+    <!--[if lte IE 8]>
+    <script src="js/html5.js"></script>
+    <script src="js/selector.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+<div class="c_skip">
+    <a href="#c_ht_product">본문 바로가기</a>
+    <a href="#c_gnb_wrap">주메뉴 바로가기</a>
+</div>
+
+<!-- pc S -->
+<header class="c_hd c_clear">    
+    <h2 class="c_logo"><a href="/">clio logo</a></h2>
+    <ul class="c_lang c_clear">
+        <li><a href="#">KOR</a></li>
+        <li><a href="#">ENG</a></li>
+        <li><a href="#">CHN </a></li>
+    </ul>
+    <ul class="c_util c_clear">
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">회원가입</a></li>
+        <li><a href="#">매장안내</a></li>
+        <li><a href="#">인재채용</a></li>
+    </ul>
+</header>
+<nav id="c_gnb_wrap">
+    <ul class="c_center c_clear">
+        <li>
+            <a href="#">ABOUT CLIO</a>
+            <div class="c_2depth_wrap">
+                <ul class="c_2depth">
+                    <li><a href="#">브랜드 소개</a></li>
+                    <li><a href="#">매장 안내</a></li>
+                    <li><a href="#">클리오 뉴스</a></li>
+                    <li><a href="#">채용 정보</a></li>
+                    <li><a href="#">클리오 소개</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="#">PRODUCT</a>
+            <div class="c_2depth_wrap">
+                <ul class="c_2depth">
+                    <li><a href="#">베스트 상품</a></li>
+                    <li><a href="#">신상품</a></li>
+                    <li><a href="#">스킨케어</a></li>
+                    <li><a href="#">메이크업</a></li>
+                    <li><a href="#">네일</a></li>
+                    <li><a href="#">화장용품</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="#">MEDIA</a>
+            <div class="c_2depth_wrap">
+                <ul class="c_2depth">
+                    <li><a href="#">TV광고</a></li>
+                    <li><a href="#">클리오 VDIEO</a></li>
+                    <li><a href="#">메이크업TIP</a></li>
+                    <li><a href="#">메이크업룩</a></li>
+                    <li><a href="#">갤러리</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="#">CUMMUNITY</a>
+            <div class="c_2depth_wrap">
+                <ul class="c_2depth">
+                    <li><a href="#">브랜드 소개</a></li>
+                    <li><a href="#">매장 안내</a></li>
+                    <li><a href="#">클리오 뉴스</a></li>
+                    <li><a href="#">채용 정보</a></li>
+                    <li><a href="#">클리오 소개</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="#">EVENT</a>
+            <div class="c_2depth_wrap">
+                <ul class="c_2depth">
+                    <li><a href="#">BEST REVIEW</a></li>
+                    <li><a href="#">SNS</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="#">IR</a>
+            <div class="c_2depth_wrap">
+                <ul class="c_2depth">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">전자공고</a></li>
+                    <li><a href="#">주가정보</a></li>
+                    <li><a href="#">재무정보</a></li>
+                    <li><a href="#">IR자료</a></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</nav> <!-- pc E -->
+
+<!-- mobile S -->
+<header class="c_m_hd c_clear">
+    <button class="btn_menu"><span>MENU</span></button>
+    <span class="moda_gb">메뉴배경</span>
+    <h2 class="cm_logo"><a href="/">clio logo</a></h2>
+    <a class="see_cart">장바구니</a>
+    <nav id="cm_gnb_wrap">
+        <ul class="c_m_util c_clear">
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">매장안내</a></li>
+            <li><a href="#">인재채용</a></li>
+        </ul>
+        <ul class="navi_wrap">
+            <li>
+                <a href="#">ABOUT CLIO</a>
+                <ul class="cm_2depth">
+                    <li><a href="#">브랜드 소개</a></li>
+                    <li><a href="#">매장 안내</a></li>
+                    <li><a href="#">클리오 뉴스</a></li>
+                    <li><a href="#">채용 정보</a></li>
+                    <li><a href="#">클리오 소개</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">PRODUCT</a>
+                <ul class="cm_2depth">
+                    <li><a href="#">베스트 상품</a></li>
+                    <li><a href="#">신상품</a></li>
+                    <li><a href="#">스킨케어</a></li>
+                    <li><a href="#">메이크업</a></li>
+                    <li><a href="#">네일</a></li>
+                    <li><a href="#">화장용품</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">MEDIA</a>
+                <ul class="cm_2depth">
+                    <li><a href="#">TV광고</a></li>
+                    <li><a href="#">클리오 VDIEO</a></li>
+                    <li><a href="#">메이크업TIP</a></li>
+                    <li><a href="#">메이크업룩</a></li>
+                    <li><a href="#">갤러리</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">CUMMUNITY</a>
+                <ul class="cm_2depth">
+                    <li><a href="#">브랜드 소개</a></li>
+                    <li><a href="#">매장 안내</a></li>
+                    <li><a href="#">클리오 뉴스</a></li>
+                    <li><a href="#">채용 정보</a></li>
+                    <li><a href="#">클리오 소개</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">EVENT</a>
+                <ul class="cm_2depth">
+                    <li><a href="#">BEST REVIEW</a></li>
+                    <li><a href="#">SNS</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">IR</a>
+                <ul class="cm_2depth">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">전자공고</a></li>
+                    <li><a href="#">주가정보</a></li>
+                    <li><a href="#">재무정보</a></li>
+                    <li><a href="#">IR자료</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header><!-- mobile E -->
+
+<section class="c_mv">
+    <h2 class="c_blind">main visual video</h2>
+    <div>
+        <video autoplay loop muted poster="img/main/main_visual_video.jpg" id="main_video" >
+            <source src="video/vd_main_visual2.mp4" type="video/mp4">
+        </video>
+    </div>
+</section>
+<section id="c_ht_product" class="c_center">
+    <h2>HOT PRODUCT</h2>
+    <p>핫이슈, 뜨거운 제품을 만나보세요 !</p>
+    <div class="hp_wrap c_clear">
+        <div>
+            <p>제품 이미지1</p>
+            <div class="product_more_info">
+                <p>킬커버 스테이 퍼펙트 <br>파운데이션</p>
+                <p>판매가격 30,000</p>
+                <button>ADD CART</button>
+            </div>
+        </div>
+        <div>
+            <p>제품 이미지2</p>
+            <div class="product_more_info">
+                <p>매드 샤인 립</p>
+                <p>판매가격 16,000</p>
+                <button>ADD CART</button>
+            </div>
+        </div>
+        <div>
+            <p>제품 이미지3</p>
+            <div class="product_more_info">
+                <p>루즈힐 벨벳</p>
+                <p>판매가격 18,000</p>
+                <button>ADD CART</button>
+            </div>
+        </div>
+        <div>
+            <p>제품 이미지4</p>
+            <div class="product_more_info">
+                <p>킬라스팅 슈퍼프루프 <br>브러쉬 라이너</p>
+                <p>판매가격 18,000</p>
+                <button>ADD CART</button>
+            </div>
+        </div>
+        <div>
+            <p>제품 이미지5</p>
+            <div class="product_more_info">
+                <p>[한번만 발라도 뭉침없이!] 킬브로우 컬러 브로우 래커</p>
+                <p>판매가격 12,000</p>
+                <button>ADD CART</button>
+            </div>
+        </div>
+    </div>
+    <a href="#">제품 구경하기</a>
+</section>
+<section class="c_motd_wrap">
+    <div>
+        <div class="c_center motd_top">
+            <h2>MOTD</h2>
+            <p>오늘의 메이크업 아이템을 소개합니다</p>
+            <a href="#">VIEW MORE</a>
+        </div>
+        <div class="motd_item_img_wrap">
+            <div class="motd_sub_wrap">
+                <div>
+                    <div class="motd_img1_wrap">
+                        <div><img src="img/main/img_motd1.png" alt="MOTD 이미지1" class="res_cimg"></div>
+                        <p>예민한 피부에도 순하게, <br>착한 수분 쿠션</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="motd_img2_wrap">
+                        <div><img src="img/main/img_motd2.png" alt="MOTD 이미지2" class="res_cimg"></div>
+                        <p>극강커버 <br>48시간 지속력UP</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="motd_img3_wrap">
+                        <div><img src="img/main/img_motd3.png" alt="MOTD 이미지3" class="res_cimg"></div>
+                        <p>남다른 광채로 <br>시선을 압도하다</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="motd_img4_wrap">
+                        <div><img src="img/main/img_motd4.png" alt="MOTD 이미지4" class="res_cimg"></div>
+                        <p>매끈한 벨벳피부결</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="motd_img5_wrap">
+                        <div><img src="img/main/img_motd5.png" alt="MOTD 이미지5" class="res_cimg"></div>
+                        <p>착붙팔레트로 <br>찰떡같은 눈화장</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="motd_img6_wrap">
+                        <div><img src="img/main/img_motd6.png" alt="MOTD 이미지6" class="res_cimg"></div>
+                        <p>베일 틴트 밤으로 <br>데일리 메이크업 완성</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="c_beauty_wrap c_clear c_center">
+    <div class="holiday_makeup1">
+        <p>HOW TO<br>
+            MAKE UP<br>
+            ON A SPECIAL DAY
+        </p>
+        <div class="see_video">
+            <a href="#">
+                <img src="img/main/img_youtube1.jpg" alt="메이크업 동영상 대체 이미지1" class="res_cimg">
+                <div class="btn_play_video1">재생버튼</div>
+            </a>
+            <div class="md_bg">
+                <div class="bg_notbubb">가상요소</div>
+                <video controls poster="img/main/before_play1.jpg" clas>
+                    <source src="video/holidaymakeup_video1.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2>홀리데이, 스파클링 메이크업</h2>
+        <p>HOLIDAY, SPARKLING FACE MAKE UP</p>
+        <div class="rel_video">Related Video</div>
+        <div class="sub_vd_wrap">
+            <div class="see_video ele_pro">
+                <a href="#">
+                    <img src="img/main/img_youtube2.jpg" alt="메이크업 동영상 대체 이미지2" class="res_cimg">
+                    <div class="btn_play_each">재생버튼</div>
+                    <p>클리오 루즈힐 벨벳 전컬러 퍼스널컬러 분류 발색</p>
+                </a>
+                <div class="md_bg">
+                    <div class="bg_notbubb">가상요소</div>
+                    <video controls poster="img/main/before_play2.jpg">
+                        <source src="video/holidaymakeup_video2.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="see_video wait_pro">
+                <a href="#">
+                    <img src="img/main/img_youtube3.jpg" alt="메이크업 동영상 대체 이미지2" class="res_cimg">
+                    <div class="btn_play_each">재생버튼</div>
+                    <p>클리오 신상 섀도우팔레트 매트X메탈 리뷰</p>
+                </a>
+                <div class="md_bg">
+                    <div class="bg_notbubb">가상요소</div>
+                    <video controls poster="img/main/before_play3.jpg">
+                        <source src="video/holidaymakeup_video3.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="see_video wait_pro">
+                <a href="#">
+                    <img src="img/main/img_youtube4.jpg" alt="메이크업 동영상 대체 이미지3" class="res_cimg">
+                    <div class="btn_play_each">재생버튼</div>
+                    <p>기다리던 클리오 대표쿠션 3가지 </p>
+                </a>
+                <div class="md_bg">
+                    <div class="bg_notbubb">가상요소</div>
+                    <video controls poster="img/main/before_play4.jpg">
+                        <source src="video/holidaymakeup_video4.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="more_video">뷰티 영상 더보기</a>
+</section>
+<div class="c_sub_slogan">
+    <div class="sg_word">
+        <p><span class="sg_pt">품절 대란</span>으로 입소문난 그 아이템</p>
+        <span>지금 클리오에서 <span class="sg_pt">소&#46;장&#46;각</span></span>
+    </div>
+    <div class="sg_fadaelips">
+        <img src="img/main/img_slogan_fadaelips.png" alt="슬로건 파운데이션 립스틱 이미지" class="res_cimg">
+    </div>
+    <div class="sg_cushion">
+        <img src="img/main/img_slogan_cushion.png" alt="슬로건 커버쿠션 이미지" class="res_cimg">
+    </div>
+</div>
+<section class="c_real_life_wrap">
+    <div class="i_inssa">
+        <h2>CLIO IN YOUR REAL LIFE</h2>
+        <p>이젠 나도 인스타그램 인싸</p>
+    </div>
+    <div class="t_lip">
+        상단부분 lipstick texture image
+    </div>
+    <div class="b_lip">
+        하단부분 lipstick texture image
+    </div>
+    <div class="insta_wrap">
+        <div class="insta_story">
+            <div class="c_clear insta1">
+                <div>
+                    <img src="img/main/insta1_1.jpg" alt="클리오 인스타그램 이미지1-1" class="res_cimg">
+                </div>
+                <div>
+                    <img src="img/main/insta1_2.jpg" alt="클리오 인스타그램 이미지1-2" class="res_cimg">
+                </div>
+                <div>
+                    <img src="img/main/insta1_3.jpg" alt="클리오 인스타그램 이미지1-3" class="res_cimg">
+                </div>
+                <div>
+                    <img src="img/main/insta1_4.jpg" alt="클리오 인스타그램 이미지1-4" class="res_cimg">
+                </div>
+                <div>
+                    <img src="img/main/insta1_5.jpg" alt="클리오 인스타그램 이미지1-5" class="res_cimg">
+                </div>
+                <div>
+                    <img src="img/main/insta1_6.jpg" alt="클리오 인스타그램 이미지1-6" class="res_cimg">
+                </div>
+            </div>
+            <div class="c_clear insta2">
+                <div>
+                    <img src="img/main/insta2_1.jpg" alt="클리오 인스타그램 이미지2-1" class="res_cimg">
+                </div>
+                <div>
+                    <img src="img/main/insta2_2.jpg" alt="클리오 인스타그램 이미지2-2" class="res_cimg">
+                </div>
+                <div>
+                    <img src="img/main/insta2_3.jpg" alt="클리오 인스타그램 이미지2-3" class="res_cimg">
+                </div>
+                <div>
+                    <img src="img/main/insta2_4.jpg" alt="클리오 인스타그램 이미지2-4" class="res_cimg">
+                </div>
+                <div>
+                    <img src="img/main/insta2_5.jpg" alt="클리오 인스타그램 이미지2-5" class="res_cimg">
+                </div>
+                <div>
+                    <img src="img/main/insta2_6.jpg" alt="클리오 인스타그램 이미지2-6" class="res_cimg">
+                </div>
+            </div>
+            <div class="c_clear insta3">
+                <div>
+                    <img src="img/main/insta3_1.jpg" alt="클리오 인스타그램 이미지3-1" class="res_cimg">
+                </div>
+                <div>
+                    <img src="img/main/insta3_2.jpg" alt="클리오 인스타그램 이미지3-2" class="res_cimg">
+                </div>
+                <div>
+                    <img src="img/main/insta3_3.jpg" alt="클리오 인스타그램 이미지3-3" class="res_cimg">
+                </div>
+                <div>
+                    <img src="img/main/insta3_4.jpg" alt="클리오 인스타그램 이미지3-4" class="res_cimg">
+                </div>
+                <div>
+                    <img src="img/main/insta3_5.jpg" alt="클리오 인스타그램 이미지3-5" class="res_cimg">
+                </div>
+                <div>
+                    <img src="img/main/insta3_6.jpg" alt="클리오 인스타그램 이미지3-6" class="res_cimg">
+                </div>
+            </div>
+            <div class="c_clear insta4">
+                <div>
+                    <img src="img/main/insta4_1.jpg" alt="클리오 인스타그램 이미지4-1" class="res_cimg">
+                </div>
+                <div>
+                    <img src="img/main/insta4_2.jpg" alt="클리오 인스타그램 이미지4-2" class="res_cimg">
+                </div>
+                <div>
+                    <img src="img/main/insta4_3.jpg" alt="클리오 인스타그램 이미지4-3" class="res_cimg">
+                </div>
+                <div>
+                    <img src="img/main/insta4_4.jpg" alt="클리오 인스타그램 이미지4-4" class="res_cimg">
+                </div>
+                <div>
+                    <img src="img/main/insta4_5.jpg" alt="클리오 인스타그램 이미지4-5" class="res_cimg">
+                </div>
+                <div>
+                    <img src="img/main/insta4_6.jpg" alt="클리오 인스타그램 이미지4-6" class="res_cimg">
+                </div>
+            </div>
+            <div class="c_clear insta5">
+                <div>
+                    <img src="img/main/insta5_1.jpg" alt="클리오 인스타그램 이미지5-1" class="res_cimg">
+                </div>
+                <div>
+                    <img src="img/main/insta5_2.jpg" alt="클리오 인스타그램 이미지5-2" class="res_cimg">
+                </div>
+                <div>
+                    <img src="img/main/insta5_3.jpg" alt="클리오 인스타그램 이미지5-3" class="res_cimg">
+                </div>
+                <div>
+                    <img src="img/main/insta5_4.jpg" alt="클리오 인스타그램 이미지5-4" class="res_cimg">
+                </div>
+                <div>
+                    <img src="img/main/insta5_5.jpg" alt="클리오 인스타그램 이미지5-5" class="res_cimg">
+                </div>
+                <div>
+                    <img src="img/main/insta5_6.jpg" alt="클리오 인스타그램 이미지5-6" class="res_cimg">
+                </div>
+            </div>
+            <div class="c_clear insta6">
+                <div>
+                    <img src="img/main/insta6_1.jpg" alt="클리오 인스타그램 이미지6-1" class="res_cimg">
+                </div>
+                <div>
+                    <img src="img/main/insta6_2.jpg" alt="클리오 인스타그램 이미지6-2" class="res_cimg">
+                </div>
+                <div>
+                    <img src="img/main/insta6_3.jpg" alt="클리오 인스타그램 이미지6-3" class="res_cimg">
+                </div>
+                <div>
+                    <img src="img/main/insta6_4.jpg" alt="클리오 인스타그램 이미지6-4" class="res_cimg">
+                </div>
+                <div>
+                    <img src="img/main/insta6_5.jpg" alt="클리오 인스타그램 이미지6-5" class="res_cimg">
+                </div>
+                <div>
+                    <img src="img/main/insta6_6.jpg" alt="클리오 인스타그램 이미지6-6" class="res_cimg">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="c_about_clio_info_wrap">
+    <div class="c_clear">
+        <div class="ab_clio">
+            <div class="abt_wrap">
+                <h3>ABOUT CLIO</h3>
+                <ul>
+                    <li><a href="#">클리오 소개</a></li>
+                    <li><a href="#">클리오 매장안내</a></li>
+                    <li><a href="#">가맹점 개설문의</a></li>
+                    <li><a href="#">브랜드 입점문의</a></li>
+                    <li><a href="#">클리오 제휴서비스</a></li>
+                    <li><a href="#">온라인 카드사 혜택</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="cs_clio">
+            <div class="abt_wrap">
+                <h3>고객센터 이용안내</h3>
+                <div class="c_clear">
+                    <p>온라인 문의 <br>0404-0000-0000</p>
+                    <p>제휴 및 매장 문의 <br>0404-0000-0001</p>
+                </div>
+                <p>운영시간 : AM9 ~ PM6 (주말 및 공휴일 휴무)</p>
+                <p>점심시간 : PM12 ~ PM1</p>
+            </div>
+        </div>
+        <div class="mb_clio">
+            <div class="abt_wrap">
+                <h3>모바일</h3>
+                <div class="c_clear">
+                    <div>
+                        <img src="img/main/qr_code_happygoldfishcom.jpg" alt="큐알 코드">
+                    </div>
+                    <div>
+                        <a href="#">구글 플레이</a>
+                        <a href="#">애플 스토어</a>
+                    </div>
+                </div>
+                <p>새로워진 클리오 앱을 이용하세요.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="btn_quick">
+    <div><a href="#">장바구니</a></div>
+    <div><a href="#">이벤트</a></div>
+    <div class="tothetop"><a href="#">TOP</a></div>
+</div>
+<footer class="c_ft">
+    <div class="c_clear c_ft_wrap">
+        <div class="ft_lt_wrap">
+            <ul class="c_clear">
+                <li><a href="#">이용약관</a></li>        
+                <li><a href="#">개인정보취급방침</a></li>
+                <li><a href="#">채용정보</a></li>        
+            </ul>
+            
+        </div>
+        <div class="ft_rt_wrap c_clear">
+            <a href="#">페이스북 바로가기</a>
+            <a href="#">인스타그램 바로가기</a>
+            <div>
+                <ul class="c_fam">
+                    <li>
+                        <a href="#">FAMILY SITE</a>
+                        <ul>
+                            <li><a href="#">클럽클리오</a></li>
+                            <li><a href="#">페리페라</a></li>
+                            <li><a href="#">구달</a></li>
+                            <li><a href="#">힐링버드</a></li>
+                            <li><a href="#">더마토리</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button>패밀리 사이트 목록보기 아이콘</button>
+            </div>
+        </div>
+    </div>
+    <p>본 사이트는 포트폴리오 용도로 제작된 가상의 사이트 입니다. 모든 콘텐츠의 저작권은 클리오와 해당사에 있음을 밝힙니다. <span><br>Design &amp; Publishing by Eunkyung Yu.</span></p>
+</footer>
+</body>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

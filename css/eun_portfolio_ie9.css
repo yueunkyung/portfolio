@@ -1,0 +1,43 @@
+@charset "utf-8";
+body{
+background-color:#ddd;
+}
+/* intro_page */
+.eunp_intro>p{
+    opacity:1;
+}
+.eunp_intro>strong{
+    width:198px;
+    height:266px;
+    margin-left:-99px;
+    margin-top:-133px;
+}
+.main_title{
+    position:relative;
+}
+.main_title>span{
+    position:absolute;
+    top:0px;
+}
+.main_title>span:nth-of-type(1){
+    transform:translateX(0px);
+    left:50%;
+    margin-left:-595px;
+}
+.main_title>span:nth-of-type(2){
+    transform:translateX(0px);
+    right:50%;
+    margin-right:-660px;
+}
+.eunp_intro>span{
+    opacity:1;
+}
+
+/* about_page */
+.pic_me, .pic_me_shadow, .p_my_ci{opacity:1;}
+.pic_me{
+    left:85px;
+}
+.pic_me_shadow{
+    left:105px;
+}

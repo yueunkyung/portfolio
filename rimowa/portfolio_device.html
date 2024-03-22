@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Untitled Document</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <style>
+    *{margin:0;padding:0;}
+    html{}
+    body{font-size:12px;}
+    #res_view{
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        z-index:9990;
+        background:rgba(0,0,0,0.7);
+    }
+    #res_view>div{
+        width:300px;
+        margin:0 auto;
+    }
+    #res_view>div:after{
+        content:'';
+        display:block;
+        clear:both;
+    }
+    #res_view>div>button{
+        display:block;
+        padding:0px;
+        border:none;
+        background:transparent;
+        cursor:pointer;
+        float:left;
+        width:100px;
+        line-height:40px;
+        text-align:center;
+        box-sizing:border-box;
+        color:#fff;
+        font-size:1.1em;
+        text-decoration:none;
+        border-left:1px solid #ddd;
+        border-right:1px solid #ddd;
+        transition:0.5s;
+        text-indent:-9999px;
+        background-repeat:no-repeat;
+        background-position:center center;
+    }
+    #res_view>div>button:nth-child(2){
+        border:none;
+    }
+    #res_view>div>.pc_dv{
+        background-image:url(img_dv/icon_monitor.png);
+    }
+    #res_view>div>.tablet_dv{
+        background-image:url(img_dv/icon_tablet.png);
+    }
+    #res_view>div>.mobile_dv{
+        background-image:url(img_dv/icon_mobile.png);    
+    }
+    #res_view>div>button:hover,#res_view>div>button:focus, #res_view>div>button.active{
+        background-color:#f2f2f2;
+    }
+    #res_view>div>.pc_dv:hover, #res_view>div>.pc_dv:focus, #res_view>div>.pc_dv.active{
+        background-image:url(img_dv/icon_monitor_h.png);
+    }
+    #res_view>div>.tablet_dv:hover, #res_view>div>.tablet_dv:focus, #res_view>div>.tablet_dv.active{
+        background-image:url(img_dv/icon_tablet_h.png);
+    }
+    #res_view>div>.mobile_dv:hover, #res_view>div>.mobile_dv:focus, #res_view>div>.mobile_dv.active{
+        background-image:url(img_dv/icon_mobile_h.png);
+    }
+    #view_device{
+        margin-left: auto;
+        margin-right: auto;
+    }   
+    #view_device.pc #view_inner{
+        border:none;
+    }
+    #view_device.pc iframe{
+        position:fixed;
+        top:40px;
+        left:0;
+        width:calc(100%);
+        height:100%;
+    }
+    #view_device.tablet{
+        margin-top:100px;
+        margin-bottom:100px;
+        width:847px;
+        height:1086px;
+        box-sizing:border-box;
+        padding:30px;
+        border-radius:15px;
+        border:1px solid #ccc;
+        box-shadow:0px 1px 1px rgba(100,100,100,0.1), 0px -1px 1px rgba(100,100,100,0.1);
+    }
+    #view_device.mobile{
+        margin-top:100px;
+        margin-bottom:100px;
+        width:399px;
+        height:722px;
+        box-sizing:border-box;
+        padding:40px 10px;
+        border-radius:8px;
+        border:1px solid #ccc;
+        box-shadow:0px 1px 1px rgba(100,100,100,0.1), 0px -1px 1px rgba(100,100,100,0.1);
+    }
+    #view_inner{
+        width:100%;
+        height:100%;
+        border:1px solid #eee;
+    }
+    .view_frame{
+        width:100%;
+        height:100%;
+        border:none;
+    }
+    </style>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script>
+    $(function(){
+        $("#res_view button").click(function(){
+            var device=$(this).attr("data-url");
+            $("#view_device").removeClass();
+            $("#view_device").addClass(device);
+            $(this).siblings().removeClass("active");
+            $(this).addClass("active");
+        });
+    });//E
+    </script>
+</head>
+<body>
+<nav id="res_view">
+    <div>
+        <button data-url="pc" class="active pc_dv">PC</button>
+        <button data-url="tablet" class="tablet_dv">TABLET</button>
+        <button data-url="mobile" class="mobile_dv">MOBILE</button>
+    </div>
+</nav>
+<div id="view_device" class="pc">
+    <div id="view_inner">
+        <iframe class="view_frame" src="http://happygoldfish.co.kr/rimowa" title="port"></iframe>
+    </div>
+</div>
+</body>
+</html>

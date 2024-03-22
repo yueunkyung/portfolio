@@ -1,0 +1,416 @@
+@charset "utf-8";
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size:14px;
+    color:#3e3a39;
+    line-height:1.5em;
+}
+li{list-style:none;}
+a{
+    color:#3e3a39;
+    text-decoration:none;
+}
+img{
+    vertical-align:top;
+}
+.d_center{
+    max-width:1260px;
+    margin:0 auto;
+}
+.d_blind{
+    position:absolute;
+    left:-9999px;
+}
+.d_clear:after{
+    content:'';
+    clear:both;
+    display:block;
+}
+.res_img{max-width:100%;height:auto;}
+
+/* skip */
+.d_skip>a{
+    position:absolute;
+    left:-9999px;
+    width:100%;
+    line-height:40px;
+    text-align:center;
+    background-color:rgb(255,255,255);
+    background-color:rgb(255,255,255,0.6);
+    z-index:9999;
+}
+.d_skip>a:focus{
+    left:0px;
+}
+
+/* header */
+#n_hd_wrap{
+    position:relative;
+    width:100%;
+    background-color:#7690bc;
+    z-index:9899;
+
+}
+.d_header_top_area{
+    padding:20px 10px 0px;  
+}
+.d_lang{
+    float:left;
+}
+.d_lang>li{
+    float:left;
+    padding:5px 8px;
+    border:1px solid #fff;
+}
+.d_lang>li:first-child{
+    border-right:none;
+}
+.d_lang>li>a{
+    color:#fff;
+}
+.d_util_wrap{
+    float:right;
+}
+.d_search_wrap{
+    position:relative;
+    float:left;    
+    border-radius:10px;
+}
+.btn_d_search{
+    position:absolute;
+    top:5px;
+    right:10px;
+    text-indent:-9999px;
+    border:none;
+    padding:0px;
+    width:25px;
+    height:25px;
+    background-color:transparent;
+    background-image:url(../img/common/icon_search.png);
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+.d_search_wrap>form>fieldset>input[type=text]{
+    height:35px;
+    line-height:35px;
+    padding:0px 45px 0px 15px;
+    border:none;
+    border-radius:10px;
+    width:250px;
+    box-sizing:border-box;
+}
+.d_sub_util{
+    float:right;
+    margin-left:20px;
+}
+.d_sub_util>li{
+    display:inline-block;
+    line-height:35px;
+    margin-right:10px;
+}
+.d_sub_util>li:last-child{
+    margin-right:0px;
+}
+.d_sub_util>li>a{
+    color:#fff;
+}
+.d_logo{
+    margin-top:15px;
+    margin-bottom:30px;
+    text-align:center;
+}
+.d_logo>a{
+    display:inline-block;
+    text-indent:-9999px;
+    width:205px;
+    line-height:46px;
+    height:46px;
+    background-image:url(../img/common/logo_daelim_white.png);
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+
+/* gnb */
+.d_header_gnb_area{
+    position:relative;
+    border-top:1px solid #fff;
+    border-bottom:1px solid #c7d7f2;
+}
+#d_gnb_wrap>li{     
+    float:left;
+    width:20%;
+    text-align:center;
+    line-height:40px;
+}
+#d_gnb_wrap>li>a{
+    position:relative;
+    color:#fff;
+    font-size:18px;
+    padding:5px 30px;
+}
+#d_gnb_wrap>li>a:after{
+    content:'';
+    position:absolute;
+    left:0px;
+    bottom:-6px;
+    width:0;
+    height:5px;
+    border-radius:5px;
+    background-color:#c7d7f2;
+    opacity:0;
+    transition:0.5s;
+}
+#d_gnb_wrap>li>a:hover:after, #d_gnb_wrap>li>a:focus:after, #d_gnb_wrap>li>a.on:after{
+    width:100%;
+    opacity:1;    
+}
+.d_gnb_2depth{
+    position:absolute;
+    top:41px;
+    left:0px;
+    width:100%;
+    background:#fff;
+    display:none;
+}
+.d_gnb_2depth>div>ul>li{
+    float:left;
+}
+.d_gnb_2depth>div>ul>li:last-child{
+    margin-right:0px;
+}
+.d_gnb_2depth>div>ul>li>a{
+    padding:5px 10px;
+    font-size:16px;
+    color:#000;
+}
+.d_gnb_2depth>div>ul>li>a:hover, .d_gnb_2depth>div>ul>li>a:focus{
+    color:rgb(52, 130, 201);
+    color:#0042ff;
+}
+.d_intro_company{
+    margin-left:70px;
+}
+.d_intro_product{
+    margin-left:280px;
+}
+.d_brand_info{
+    margin-left:530px;
+}
+.d_commu{
+    margin-left:690px;
+}
+.d_cs{
+    margin-left:830px;
+}
+
+/* footer */
+.d_ft_wrap{
+    background:#7690bc;
+    padding:40px 40px;
+    box-sizing: border-box;
+    color:#fff;
+}
+.d_ft_lt{
+    float:left;
+}
+.d_ft_lt>ul{
+    margin-bottom:80px;
+}
+.d_ft_lt>ul>li{
+    float:left;
+    margin-right:15px;
+    color:#153260;
+}
+.d_ft_lt>ul>li:last-child{
+    margin-right:0px;
+}
+.d_ft_lt>ul>li>a{
+    font-size:15px;
+    color:#fff;
+}
+.d_ft_lt>ul>li:nth-of-type(2)>a{
+    font-weight:bold;
+}
+.d_ft_lt>p>span{
+    font-weight:bold;
+    font-style:italic;
+}
+#d_ft_rt{
+    float:right;
+}
+#d_ft_rt>p{
+    font-size:18px;
+}
+#d_ft_rt>p>span{
+    display:block;
+    font-size:22px;
+    font-weight:bold;
+    margin-bottom:20px; 
+}
+#d_ft_rt>div{
+    margin-top:40px;
+}
+.icon_social_wrap{
+    display:inline-block;
+}
+.icon_social_wrap>li{
+    display:inline-block;
+    width:40px;
+    height:40px;
+    border-radius:20px;
+    margin-right:10px;
+}
+.icon_social_wrap>li:last-child{
+}
+.icon_social_wrap>li>a{
+    display:block;
+    width:100%;
+    height:100%;
+    border-radius:20px;
+    border:2px solid #3e3a39;
+    box-sizing:border-box;
+    text-indent:-9999px;
+    background-color:#3e3a39;
+    background-repeat:no-repeat;
+    background-position:center center;
+    transition:0.5s;
+}
+.icon_social_wrap>li:nth-of-type(1)>a{
+    background-image:url(../img/common/ft_icon_facebook.png);
+    background-size:12px 20px;
+}
+.icon_social_wrap>li:nth-of-type(1)>a:hover, 
+.icon_social_wrap>li:nth-of-type(1)>a:focus{
+    background-image:url(../img/common/ft_icon_facebook_h.png);
+    background-color:#fff;
+}
+.icon_social_wrap>li:nth-of-type(2)>a{
+    background-image:url(../img/common/ft_icon_blogger.png);
+    background-size:17px 17px;
+    background-position:center center;
+}
+.icon_social_wrap>li:nth-of-type(2)>a:hover, 
+.icon_social_wrap>li:nth-of-type(2)>a:focus{
+    background-image:url(../img/common/ft_icon_blogger_h.png);
+    background-color:#fff;
+}
+.icon_social_wrap>li:nth-of-type(3)>a{
+    background-image:url(../img/common/ft_icon_youtube.png);
+    background-size:20px 24px;
+    background-position:center center;
+}
+.icon_social_wrap>li:nth-of-type(3)>a:hover, 
+.icon_social_wrap>li:nth-of-type(3)>a:focus{
+    background-image:url(../img/common/ft_icon_youtube_h.png);
+    background-color:#fff;
+}
+.icon_social_wrap>li:nth-of-type(4)>a{
+    background-image:url(../img/common/ft_icon_kakaostory.png);
+    background-size:15px 20px;
+    background-position:center center;
+}
+.icon_social_wrap>li:nth-of-type(4)>a:hover, 
+.icon_social_wrap>li:nth-of-type(4)>a:focus{
+    background-image:url(../img/common/ft_icon_kakaostory_h.png);
+    background-color:#fff;
+}
+.icon_social_wrap+div{
+display:inline-block;
+    line-height:45px;
+    width:210px;
+    text-indent:-9999px;
+    background-image:url(../img/common/logo_daelim_white.png);
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:205px 45px;
+}
+
+/* quick_menu */
+#d_quickMenu_wrap{
+    display:none;
+    position:fixed;
+    bottom:274px;
+    right:0;
+    width:60px;
+    background-color:#ccc;
+    text-align:center;
+    border:1px solid #999;
+    background-color:#fff;
+}
+#d_quickMenu_wrap>span{
+    display:block;
+    line-height:25px;
+    font-size:12px;
+    color:#fff;
+    background-color:#444;
+    border-bottom:1px solid #999;
+    box-sizing:border-box;
+    letter-spacing:0.1em;
+}
+.icon_quick>li{
+    border-bottom:1px solid #999;
+}
+.icon_quick>li>a{
+    display:block;
+    height:60px;
+    padding-top:40px;
+    color:#666666;
+    font-size:13px;
+    font-weight:bold;
+    line-height:20px;
+    box-sizing:border-box;    
+    background-repeat:no-repeat;
+    background-size:26px 26px;
+    background-position:center 7px;
+}
+.icon_quick>li:nth-of-type(1)>a{
+    background-image:url(../img/common/locating.png);
+}
+.icon_quick>li:nth-of-type(2)>a{
+    background-image:url(../img/common/calculator.png);
+}
+.icon_quick>li:nth-of-type(3)>a{
+    background-image:url(../img/common/settings.png);
+}
+.icon_quick>li:nth-of-type(4)>a{
+    background-image:url(../img/common/bathtub.png);
+}
+#d_quickMenu_wrap>div{
+    height:60px;
+}
+#d_quickMenu_wrap>div:nth-of-type(1){
+    box-sizing:border-box;
+    border-bottom:1px solid #999;
+}
+#d_quickMenu_wrap>div>a{
+    display:block;
+    width:100%;
+    height:100%;
+    text-indent:-9999px;
+    background-repeat:no-repeat;
+    background-size:20px 30px;
+    background-position:center center;
+}
+#d_quickMenu_wrap>div:nth-of-type(1)>a{
+    background-image:url(../img/common/up_arrow.png);
+}
+#d_quickMenu_wrap>div:nth-of-type(2)>a{
+    background-image:url(../img/common/down-arrow.png);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
